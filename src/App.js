@@ -6,12 +6,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 const App = () => {
   return (
     <div className="w-full max-w-[1440px] mx-auto bg-white">
-      <BrowserRouter>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </BrowserRouter>
+      <Header/>
+      <Home/>  
     </div>
   );
 };
