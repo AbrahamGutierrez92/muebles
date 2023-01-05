@@ -32,7 +32,7 @@ const Header = () => {
             <ul className="md:flex md:gap-x-12">
               {navigation.map((item, index)=> {
                 return <li key={index}>
-                  <Link className="capitalize text-white hover:border-b transition-all" to={item.href} >{item.name}</Link>
+                  <a className="capitalize text-white hover:border-b transition-all">{item.name}</a>
                 </li>
               })}
             </ul>
