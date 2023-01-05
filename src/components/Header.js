@@ -20,9 +20,9 @@ const Header = () => {
 
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
-          <Link to="/">
+          <a>
             <img className="h-6 lg:h-8" src={Logo} />
-          </Link>
+          </a>
 
           <div onClick={()=> setMobileNav(!mobileNav)} className="text-2xl text-white md:hidden lg:text-3xl cursor-poiter">
             {mobileNav ? <CgClose/> : <CgMenuRight/>}
