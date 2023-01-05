@@ -1,20 +1,19 @@
 import React from "react";
-import Hero from "./components/Hero";
-import Features from "./components/Features";
-import NewItems from "./components/NewItems";
-import FeaturesSecond from "./components/FeaturesSecond";
-import Products from "./components/Products";
-import Testimonial from "./components/Testimonial";
+import Header from "./components/Header";
+import Home from "./pages/Home";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const App = () => {
-  return <div className="w-full max-w-[1440px] mx-auto bg-white">
-    <Hero/>
-    <Features/>
-    <NewItems/>
-    <FeaturesSecond/>
-    <Products/>
-    <Testimonial/>
-  </div>;
+  return (
+    <div className="w-full max-w-[1440px] mx-auto bg-white">
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
+  );
 };
 
 export default App;
